@@ -365,7 +365,7 @@ class NscaAlerter(Alerter):
         for match in matches:
             message = "|".join(basic_match_string(self.rule, match).splitlines())
             self.nsca_client.svc_result(self.nagios_hostname,
-                                        self.nagios_service, pynsca.OK, message)
+                                        self.nagios_service, pynsca.CRITICAL, message)
 
     def get_info(self):
         return {'type': 'nsca',
