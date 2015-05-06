@@ -26,5 +26,7 @@ setup(
         'python-dateutil',
         'PyStaticConfiguration',
         'pyyaml',
+        'pynsca',
+        'pycrypto'
     ]
 )

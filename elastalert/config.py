@@ -32,6 +32,7 @@ rules_mapping = {
 alerts_mapping = {
     'email': alerts.EmailAlerter,
     'jira': alerts.JiraAlerter,
+    'nsca': alerts.NscaAlerter,
     'debug': alerts.DebugAlerter,
     'command': alerts.CommandAlerter
 }
